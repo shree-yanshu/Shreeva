@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alata', sans-serif;
+}
+.container{
+    position: relative;
+    background-color: #201D39;
+    font-family: 'Alata', sans-serif;
+    width: 100%;
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 80%;
+    border-radius: 80px;
+    background-color: #1e1b57;
+    margin: 0 auto;
+    border: 0.2px solid #CB1697;
+    font-weight: 500;
+    color: #CB1697;display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+.header img{
+    width: 88px;
+}
+.content-logo{
+    margin-top: 20px;
+    width: 90%;
+    font-size: 40px;
+    color: #CB1697;
+    text-align: center;
+    margin: 20px;
+}
+.content-logo img{
+    margin-top: 20px;
+    width: 600px;
+    margin-left: 3%;
+}
+.gradient img{
+    width: 100%;
+    margin-top: -10px;
+}
+.content{
+    text-align: center;
+    font-weight: normal;
+    width: 350px;
+    margin: 0 auto;
+    font-size: 15px;
+    margin-top: -250px;
+    color: #5C5ACC;
+}
+.image{
+    width: 600px;
+    transform: rotate(90deg);
+}
+.lines{
+    width:200px;
+    height: 200px;
+    margin-left: 19%;
+    margin-top: -41px;
+}
+.box{
+    display: flex;
+    margin: 20px;
+    width: 550px;
+    border-radius: 10px;
+    backdrop-filter: opacity(15%);
+    background: rgba(28, 50, 248, 0.1);
+    backdrop-filter: blur(5px);
+    color: #7E7CDA;
+}
+.box img{
+    height: 180px;
+    width: 180px;
+    margin-left: 10px;
+    margin-top: 10PX;
+}
+.box p{
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.title{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    left: 70%;
+    margin-top: -350px;
+}
+.line1{
+    margin-left: 19%;
+    margin-top: 60px;
+    width: 50%;
+}
+.image1{
+    width: 30%;
+    margin-top: 1%;
+    margin-left: 10%;
+    padding-left: 10%;
+}
+.pankh{
+    display:flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+.pankh .box{
+    height: 210px;
+    padding: 10px;
+    margin-left: 15%;
+    padding:15px;
+}
+.pankh .box p{
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+#image2{
+    margin-left: 45%;
+    margin-top: 1%;
+    width: 36%;
+}
+#wings{
+    width: 60%;
+    margin-top: -5%;
+    margin-left: -130px;
+}
+.our-products{
+    text-align: center;
+}
+#title1{
+    color: white;
+    font-size: 35px;
+    margin-left: -110px;
+}
+.products{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #5C5ACC;
+    position:absolute;
+    margin-top: -25%;
+    margin-left: 7%;
+}
+.products img{
+    height:50px;
+    width: 50px;
+}
+.first{
+    margin-top: -12%;
+    margin-left: 13%;
+}
+.second{
+    margin-top: -2%;
+    margin-left: 30%;
+}
+.third{
+    margin-top: -3%;
+    margin-left: 50%;
+}
+.fourth{
+    margin-top: -11%;
+    margin-left: 67%;
+}
+.fifth{
+    margin-top: -25%;
+    margin-left: 75%;
+}
+#line3{
+    margin-top: 5%;
+    margin-left: 7%;
+    width: 37%;
+}
+.gaya{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+.gaya img{
+    width: 75%;
+    height: 75%;
+    margin-left: -10%;    
+}
+.box4{
+    color: #fff;
+    background-color: #211E57;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 500px;
+}
+.box4 p{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.box4 input{
+    background-color: #221f68;
+    color: #5C5ACC;
+    padding:10px 20px;
+    margin: 10px;
+    border-radius: 15px;
+    border:none;
+    width: 200px;
+}
+.box4 textarea{
+    background-color: #221f68;
+    color: #5C5ACC;
+    border: none;
+    margin: 10px;
+    width: 200px;
+    padding: 10px 20px;
+}
+#lines4{
+    width: 25px;
+    height: 400px;
+    margin-left: 300px;
+}
+#footer1{
+    position: absolute;
+    height: 360px;
+}
+.footer img{
+    width: 100%;
+    height: 100%;
+}
+.footer-content{
+    color: white;
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 10%;
+    font-size: 15px;
+    line-height: 30px;
+}
+#foot-heading{
+    font-size: 30px;
+    color: #CB1697;
+}
+@media only screen and (max-width: 600px){
+    .shankh{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .gaya{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .our-products{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+.heading{
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+}
+#gradient2{
+    width: 100%;
+}
+#heading2{
+    position: absolute;
+    width: 300px;
+    color: #5C5ACC;
+    text-align: center;
+    margin-left: 38%;
+    margin-top: -20%;
+    font-size: 20px;
+}
+#petal{
+    width: 100%;
+}

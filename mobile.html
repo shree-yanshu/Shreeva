@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="mobile.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<body>
+    <div class="header">
+        <img class="logo"src="assets/logo.PNG" alt="" srcset="">
+    </div>
+    <div class="content">
+      <img src="assets/logo1.png" alt="" data-aos="zoom-in-up">
+      <div class="headings">
+          <p id="upper-heading">SOFT-TECH INNOVATIONS</p>
+          <p id="heading">SHREEVA</p>
+          <p id="lower-heading"><span>Not just a Service Provider,<br>A true</span> PARTNER</p>
+      </div>
+    </div>
+    <div class="shankh">
+      <img src="assets/shankha.PNG" alt="">
+    </div>
+    <div class="swiper mySwiper reveal">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="assets/logo-beema.jpeg" alt="">
+              <div class="content1">
+                <p style="font-size:17px">Beema Dukaan</p>
+                <p style="width: 100px;margin-left: 13px;">A Insurance Product</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box first">
+              <img src="assets/madhavseva2.png" alt="">
+              <div class="content1">
+                <p style="font-size:17px">Beema Dukaan</p>
+                <p style="width: 100px;margin-left: 13px;">A Insurance Product</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+
+</body>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 50,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      history: {
+        key: "slide",
+      },
+    });
+  </script>
+  <script>
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500 
+    });
+  </script>
+</html>
